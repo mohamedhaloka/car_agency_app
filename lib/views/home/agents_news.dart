@@ -38,7 +38,7 @@ class AgentsNews extends StatelessWidget {
                     onPressed: () {},
                     color: Colors.transparent,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
+                      borderRadius: BorderRadius.circular(8),
                     ),
                     child: Column(
                       children: [
