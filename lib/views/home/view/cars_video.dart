@@ -1,11 +1,11 @@
-import 'package:car_agency_app/views/home/header_of_list_view.dart';
 import 'package:flutter/material.dart';
 
-import '../../const.dart';
+import '../../../const.dart';
 import 'car_name_and_price.dart';
 import 'car_photo.dart';
+import 'header_of_list_view.dart';
 
-class AgentsNews extends StatelessWidget {
+class CarsVideo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -16,7 +16,7 @@ class AgentsNews extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           HeaderOfListView(
-            tittle: "جديد الوكالات",
+            tittle: "فيديو",
             allOnTap: () {},
           ),
           Container(
@@ -28,7 +28,7 @@ class AgentsNews extends StatelessWidget {
                 return Container(
                   width: 240,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(8),
+                      borderRadius: BorderRadius.circular(12),
                       border: Border.all(width: 1, color: Colors.grey[700])),
                   margin: EdgeInsets.all(2),
                   child: RaisedButton(

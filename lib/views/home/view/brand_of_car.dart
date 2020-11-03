@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../../const.dart';
-import 'car_name_and_price.dart';
-import 'car_photo.dart';
+import '../../../const.dart';
 import 'header_of_list_view.dart';
 
-class CarsVideo extends StatelessWidget {
+class BrandOfCar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -15,41 +13,36 @@ class CarsVideo extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          HeaderOfListView(
-            tittle: "فيديو",
-            allOnTap: () {},
-          ),
+          HeaderOfListView(tittle: "تصفح حسب الماركة",allOnTap: (){},),
+
           Container(
             width: customWidth(context, 1),
-            height: 200,
+            height: 65,
             margin: EdgeInsets.only(bottom: 8.0),
             child: ListView.builder(
               itemBuilder: (context, index) {
                 return Container(
-                  width: 240,
+                  width: 66,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
-                      border: Border.all(width: 1, color: Colors.grey[700])),
+                      border: Border.all(width: 1, color: Colors.grey[200])),
                   margin: EdgeInsets.all(2),
                   child: RaisedButton(
                     elevation: 0.0,
-                    padding: EdgeInsets.all(0),
+                    padding: EdgeInsets.all(2),
                     highlightElevation: 0.0,
                     onPressed: () {},
                     color: Colors.transparent,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8),
+                      borderRadius: BorderRadius.circular(12),
                     ),
-                    child: Column(
-                      children: [
-                        CarPhoto(),
-                        CarNameAndPrice(),
-                      ],
+                    child: Image.asset(
+                      'assets/images/chevrolet.png',
                     ),
                   ),
                 );
               },
-              itemCount: 7,
+              itemCount: 14,
               scrollDirection: Axis.horizontal,
             ),
           ),

@@ -1,5 +1,5 @@
 import 'package:car_agency_app/const.dart';
-import 'package:car_agency_app/views/home/view.dart';
+import 'file:///C:/Users/laptop/AndroidStudioProjects/car_agency_app/lib/views/home/view/view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
