@@ -9,12 +9,9 @@ import 'cars_video.dart';
 import 'home_header.dart';
 
 class HomeView extends StatelessWidget {
-  // GlobalKey<ScaffoldState> _drawerKey = GlobalKey<ScaffoldState>();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // key: _drawerKey,
       drawer: new Drawer(),
       backgroundColor: Colors.grey[200],
       bottomNavigationBar: Container(
