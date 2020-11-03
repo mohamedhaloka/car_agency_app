@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../const.dart';
-import 'car_name_and_price.dart';
-import 'car_photo.dart';
+import 'car_card/car_name_and_price.dart';
+import 'car_card/car_photo.dart';
 import 'header_of_list_view.dart';
 
 class AgentsNews extends StatelessWidget {
