@@ -2,6 +2,8 @@ import 'package:car_agency_app/views/home/header_of_list_view.dart';
 import 'package:flutter/material.dart';
 
 import '../../const.dart';
+import 'car_name_and_price.dart';
+import 'car_photo.dart';
 
 class AgentsNews extends StatelessWidget {
   @override
@@ -13,11 +15,14 @@ class AgentsNews extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          HeaderOfListView(tittle: "جديد الوكلاء",allOnTap: (){},),
+          HeaderOfListView(
+            tittle: "جديد الوكالات",
+            allOnTap: () {},
+          ),
           Container(
             width: customWidth(context, 1),
             height: 200,
-            margin: EdgeInsets.only(bottom:8.0),
+            margin: EdgeInsets.only(bottom: 8.0),
             child: ListView.builder(
               itemBuilder: (context, index) {
                 return Container(
@@ -37,36 +42,8 @@ class AgentsNews extends StatelessWidget {
                     ),
                     child: Column(
                       children: [
-                        Container(
-                          width: customWidth(context, 1),
-                          height: 160,
-                          decoration: BoxDecoration(
-                              image: DecorationImage(
-                                  image:
-                                      ExactAssetImage('assets/images/car.jpg')),
-                              borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(8),
-                                  topRight: Radius.circular(8))),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left:4.0,right:4.0,top: 4.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                "Marcedec",
-                                style: TextStyle(fontSize: 18),
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Text("تبدأ من",style: TextStyle(fontWeight: FontWeight.w100,fontSize: 12),),
-                                  Text("12900ك.د"),
-                                ],
-                              )
-                            ],
-                          ),
-                        )
+                        CarPhoto(),
+                        CarNameAndPrice(),
                       ],
                     ),
                   ),
