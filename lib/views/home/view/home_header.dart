@@ -3,8 +3,6 @@ import 'file:///C:/Users/laptop/AndroidStudioProjects/car_agency_app/lib/views/h
 import 'package:flutter/material.dart';
 
 class HomeHeader extends StatelessWidget {
-  // HomeHeader(_drawerKey);
-  // GlobalKey<ScaffoldState> _drawerKey;
   @override
   Widget build(BuildContext context) {
     return Container(
