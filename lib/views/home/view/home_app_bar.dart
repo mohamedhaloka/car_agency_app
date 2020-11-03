@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../const.dart';
+
 homeAppBar(context) {
   return AppBar(
     backgroundColor: Colors.transparent,
@@ -9,6 +11,17 @@ homeAppBar(context) {
         Scaffold.of(context)..openDrawer();
       },
       color: Colors.white,
+    ),
+    flexibleSpace: Container(
+      width: customWidth(context, 1),
+      height: customHeight(context, 0.2),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+            colors: [secondaryColor, Colors.transparent],
+            tileMode: TileMode.mirror,
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter),
+      ),
     ),
     brightness: Brightness.dark,
     elevation: 0.0,

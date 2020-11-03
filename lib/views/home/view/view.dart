@@ -12,7 +12,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: new Drawer(),
+      drawer: Drawer(),
       backgroundColor: Colors.grey[200],
       bottomNavigationBar: Container(
         width: customWidth(context, 1),

@@ -1,6 +1,7 @@
 import 'package:car_agency_app/const.dart';
-import 'file:///C:/Users/laptop/AndroidStudioProjects/car_agency_app/lib/views/home/view/home_app_bar.dart';
 import 'package:flutter/material.dart';
+
+import 'home_app_bar.dart';
 
 class HomeHeader extends StatelessWidget {
   @override
@@ -11,22 +12,13 @@ class HomeHeader extends StatelessWidget {
       child: Stack(
         children: [
           //image
-          Image.asset(
-      'assets/images/car.jpg',
-            width: customWidth(context, 1),
-            height: customHeight(context, 0.36),
-            fit: BoxFit.cover,
-          ),
-          //gradient
           Container(
             width: customWidth(context, 1),
-            height: customHeight(context, 0.2),
+            height: customHeight(context, 0.36),
             decoration: BoxDecoration(
-              gradient: LinearGradient(
-                  colors: [secondaryColor, Colors.transparent],
-                  tileMode: TileMode.mirror,
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter),
+              image: DecorationImage(
+                  image: ExactAssetImage("assets/images/car.jpg"),
+                  fit: BoxFit.cover),
             ),
           ),
           //appBar

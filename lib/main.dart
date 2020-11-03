@@ -31,10 +31,9 @@ class MyApp extends StatelessWidget {
       ],
       locale: Locale("fa", "IR"),
       theme: ThemeData(
-        primaryColor: primaryColor,
-        accentColor: secondaryColor,
-        backgroundColor: primaryColor
-      ),
+          primaryColor: primaryColor,
+          accentColor: secondaryColor,
+          backgroundColor: primaryColor),
       home: HomeView(),
     );
   }
