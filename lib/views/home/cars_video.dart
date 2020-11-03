@@ -36,7 +36,7 @@ class CarsVideo extends StatelessWidget {
                     onPressed: () {},
                     color: Colors.transparent,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
+                      borderRadius: BorderRadius.circular(8),
                     ),
                     child: Column(
                       children: [
@@ -48,8 +48,8 @@ class CarsVideo extends StatelessWidget {
                                   image:
                                       ExactAssetImage('assets/images/car.jpg')),
                               borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(12),
-                                  topRight: Radius.circular(12))),
+                                  topLeft: Radius.circular(8),
+                                  topRight: Radius.circular(8))),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(
@@ -81,7 +81,7 @@ class CarsVideo extends StatelessWidget {
                   ),
                 );
               },
-              itemCount: 14,
+              itemCount: 7,
               scrollDirection: Axis.horizontal,
             ),
           ),

@@ -8,12 +8,13 @@ import 'package:car_agency_app/views/home/type_of_car.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
-  GlobalKey<ScaffoldState> _drawerKey = GlobalKey<ScaffoldState>();
+  // GlobalKey<ScaffoldState> _drawerKey = GlobalKey<ScaffoldState>();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      key: _drawerKey,
+      // key: _drawerKey,
+      drawer: new Drawer(),
       backgroundColor: Colors.grey[200],
       bottomNavigationBar: Container(
         width: customWidth(context, 1),
@@ -27,7 +28,7 @@ class HomeView extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            HomeHeader(_drawerKey),
+            HomeHeader(),
             TypeOfCar(),
             BrandOfCar(),
             AgentsNews(),

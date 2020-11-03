@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-homeAppBar(context, GlobalKey<ScaffoldState> _drawerKey) {
+homeAppBar(context) {
   return AppBar(
     backgroundColor: Colors.transparent,
     leading: IconButton(
       icon: Icon(Icons.drag_handle),
       onPressed: () {
-        _drawerKey.currentState.openDrawer();
+        Scaffold.of(context)..openDrawer();
       },
       color: Colors.white,
     ),

@@ -20,14 +20,12 @@ class TypeOfCar extends StatelessWidget {
           ),
           Container(
             width: customWidth(context, 1),
-            height: 85,
-            margin: EdgeInsets.only(bottom: 8.0),
+            height: 65,
             child: ListView.builder(
               itemBuilder: (context, index) {
                 return Container(
                   width: 80,
                   height: 50,
-                  margin: EdgeInsets.all(4),
                   child: RaisedButton(
                     elevation: 0.0,
                     padding: EdgeInsets.all(0),
@@ -35,6 +33,7 @@ class TypeOfCar extends StatelessWidget {
                     onPressed: () {},
                     color: Colors.transparent,
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Image.asset(
                           'assets/images/car-body.png',
@@ -42,6 +41,7 @@ class TypeOfCar extends StatelessWidget {
                         ),
                         Text(
                           "Hatchback",
+                          textAlign: TextAlign.center,
                           style: TextStyle(
                               fontWeight: FontWeight.w400, fontSize: 12),
                         )

@@ -23,7 +23,7 @@ class AgentsNews extends StatelessWidget {
                 return Container(
                   width: 240,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(12),
+                      borderRadius: BorderRadius.circular(8),
                       border: Border.all(width: 1, color: Colors.grey[700])),
                   margin: EdgeInsets.all(2),
                   child: RaisedButton(
@@ -45,8 +45,8 @@ class AgentsNews extends StatelessWidget {
                                   image:
                                       ExactAssetImage('assets/images/car.jpg')),
                               borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(12),
-                                  topRight: Radius.circular(12))),
+                                  topLeft: Radius.circular(8),
+                                  topRight: Radius.circular(8))),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(left:4.0,right:4.0,top: 4.0),
@@ -72,7 +72,7 @@ class AgentsNews extends StatelessWidget {
                   ),
                 );
               },
-              itemCount: 14,
+              itemCount: 7,
               scrollDirection: Axis.horizontal,
             ),
           ),

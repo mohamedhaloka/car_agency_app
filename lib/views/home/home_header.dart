@@ -3,8 +3,8 @@ import 'package:car_agency_app/views/home/home_app_bar.dart';
 import 'package:flutter/material.dart';
 
 class HomeHeader extends StatelessWidget {
-  HomeHeader(_drawerKey);
-  GlobalKey<ScaffoldState> _drawerKey;
+  // HomeHeader(_drawerKey);
+  // GlobalKey<ScaffoldState> _drawerKey;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -32,7 +32,7 @@ class HomeHeader extends StatelessWidget {
             ),
           ),
           //appBar
-          homeAppBar(context,_drawerKey)
+          homeAppBar(context)
         ],
       ),
     );
