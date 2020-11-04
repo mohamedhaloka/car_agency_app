@@ -26,7 +26,7 @@ class CarsVideo extends StatelessWidget {
             child: ListView.builder(
               itemBuilder: (context, index) {
                 return Container(
-                  width: 240,
+                  width: customWidth(context, 0.6),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
                       border: Border.all(width: 1, color: Colors.grey[700])),

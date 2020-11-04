@@ -10,7 +10,7 @@ class CarPhoto extends StatelessWidget {
       height: 160,
       decoration: BoxDecoration(
           image:
-              DecorationImage(image: ExactAssetImage('assets/images/car.jpg')),
+              DecorationImage(image: ExactAssetImage('assets/images/car.jpg'),fit: BoxFit.cover),
           borderRadius: BorderRadius.only(
               topLeft: Radius.circular(8), topRight: Radius.circular(8))),
     );
