@@ -9,21 +9,14 @@ class HomeHeader extends StatelessWidget {
     return Container(
       padding: EdgeInsets.only(bottom: 6),
       color: Colors.grey[200],
-      child: Stack(
-        children: [
-          //image
-          Container(
-            width: customWidth(context, 1),
-            height: customHeight(context, 0.36),
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: ExactAssetImage("assets/images/car.jpg"),
-                  fit: BoxFit.cover),
-            ),
-          ),
-          //appBar
-          homeAppBar(context)
-        ],
+      child: Container(
+        width: customWidth(context, 1),
+        height: customHeight(context, 0.36),
+        decoration: BoxDecoration(
+          image: DecorationImage(
+              image: ExactAssetImage("assets/images/car.jpg"),
+              fit: BoxFit.cover),
+        ),
       ),
     );
   }

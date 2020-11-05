@@ -2,19 +2,19 @@ import 'package:flutter/material.dart';
 
 import '../../../const.dart';
 
-homeAppBar(context) {
+homeAppBar(context, GlobalKey<ScaffoldState> scaffoldKey) {
   return AppBar(
     backgroundColor: Colors.transparent,
     leading: IconButton(
       icon: Icon(Icons.drag_handle),
       onPressed: () {
-        Scaffold.of(context)..openDrawer();
+        scaffoldKey.currentState.openDrawer();
       },
       color: Colors.white,
     ),
     flexibleSpace: Container(
       width: customWidth(context, 1),
-      height: customHeight(context, 0.2),
+      height: customHeight(context, 0.1),
       decoration: BoxDecoration(
         gradient: LinearGradient(
             colors: [secondaryColor, Colors.transparent],
